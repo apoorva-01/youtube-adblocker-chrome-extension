@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Ad Blocker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="brand">
+      <img class="logo" src="images/logo.webp" alt="logo" />
+      <h1>YouTube Ad Blocker</h1>
+    </div>
+
+    <div class="row">
+      <span id="status" class="status on">Blocking is ON</span>
+      <label class="switch">
+        <input type="checkbox" id="toggle" checked />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="stat">
+      <span class="stat-num" id="count">0</span>
+      <span class="stat-label">ads skipped</span>
+    </div>
+
+    <div class="links">
+      <a href="https://github.com/apoorva-01" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/apoorva0510/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="by">by Apoorva Verma</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

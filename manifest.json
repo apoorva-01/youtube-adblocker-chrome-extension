@@ -1,23 +1,26 @@
 {
-    "name": "YouTube Ad Blocker",
-    "version": "1.0.0",
-    "description": "Block YouTube Ads",
-    "manifest_version": 3,
-    "author": "Apoorva Verma",
-    "content_scripts": [
-        {
-          "matches": ["https://www.youtube.com/*"],
-          "js": ["script.js"]
-        }
-      ],
-      
-    "action":{
-        "default_popup": "index.html",
-        "default_title": "Block Youtube Ads"
-    },
-    "icons": {
-        "16": "./images/icon.png",
-        "48": "./images/icon.png",
-        "128": "./images/icon.png"
-      }
+  "manifest_version": 3,
+  "name": "YouTube Ad Blocker",
+  "version": "2.0.0",
+  "description": "Auto-skips YouTube video ads and hides overlay, banner, and feed ads. Toggle on/off with a skip counter.",
+  "author": "Apoorva Verma",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Ad Blocker"
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
 }
