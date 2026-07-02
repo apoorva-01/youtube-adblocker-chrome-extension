@@ -18,7 +18,7 @@ browser.
 
 ## Install (load unpacked)
 
-1. `git clone https://github.com/apoorva-01/Youtube-AdBlocker-ChromeExtension.git`
+1. `git clone https://github.com/apoorva-01/youtube-adblocker-chrome-extension.git`
 2. Open `chrome://extensions` in Chrome (or any Chromium browser: Edge, Brave, etc.).
 3. Turn on **Developer mode** (top-right).
 4. Click **Load unpacked** and select the cloned folder.
